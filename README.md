@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 When we want to sell used cars, one of the biggest problems is deciding reasonable selling prices for the cars. An effective way to solve this problem is to use a machine-learning model that can predict car prices.
 
@@ -7,24 +7,23 @@ We used Python code and libraries to build a price-prediction model. The project
 The goal of this project is to explore the dataset and discuss some interesting observations through visualizations and train machine learning models to fit and predict the prices of the used cars using supervised learning.
 
 
-### Libraries used
+## Libraries Used:
 
 To assist us in our research, we utilized the following libraries:
 
-Pandas - data cleaning and analysis
-Matplotlib - data visualization
-Seaborn - data visualization
-Numpy -
-Math -
-Random -
-Math -
-Pickle -
-statsmodels.formula.api - 
-Plotly.express - data visualization
-Re - regular expression searches
+- Pandas - data cleaning and analysis
+- Matplotlib - data visualization
+- Seaborn - data visualization
+- Numpy - data cleaning and analysis
+- Math - data analysis
+- Random - data cleaning and analysis
+- Pickle - data transfer and storing
+- statsmodels.formula.api - to create a model from a formula and dataframe.  
+- Plotly.express - data visualization
+- Re - regular expression searches
 
 
-### Project objectives
+## Project objectives
 
 The main objectives of this project are as follows:
 Data collection and cleaning
@@ -34,39 +33,39 @@ Build price-prediction models based on the chosen algorithms.
 Validate the models.
 Identify the most appropriate model.
 
-### Dataset: "Used Cars Dataset"
+## Dataset: "Used Cars Dataset"
 
 We used Kaggle dataset for this project. The data comes from Craigslist in the USA and provides information on car sales. It contains more 500.000 vehicles and has 25 columns.
 
-Data Columns:
+#### Data Columns:
 
-identry: ID
-url: listing URL
-region: craigslist region
-region_url: region URL
-price: entry price
-year: entry year
-manufacturer: manufacturer of vehicle
-model: model of vehicle
-condition: condition of vehicle
-cylinders: number of cylinders
-fuel: fuel type
-odometer: miles traveled by vehicle
-title_status: title status of vehicle
-transmission: transmission of vehicle
-vin: vehicle identification number
-drive: type of drive
-size: size of vehicle
-type: generic type of vehicle
-paint_color: color of vehicle
-image_url: image URL
-description: listed description of vehicle
-county: useless column left in by mistake
-state: state of listing
-lat: latitude of listing
-long: longitude of listing
+- identry: ID
+- url: listing URL
+- region: craigslist region
+- region_url: region URL
+- price: entry price
+- year: entry year
+- manufacturer: manufacturer of vehicle
+- model: model of vehicle
+- condition: condition of vehicle
+- cylinders: number of cylinders
+- fuel: fuel type
+- odometer: miles traveled by vehicle
+- title_status: title status of vehicle
+- transmission: transmission of vehicle
+- vin: vehicle identification number
+- drive: type of drive
+- size: size of vehicle
+- type: generic type of vehicle
+- paint_color: color of vehicle
+- image_url: image URL
+- description: listed description of vehicle
+- county: useless column left in by mistake
+- state: state of listing
+- lat: latitude of listing
+- long: longitude of listing
 
-### Data Cleaning and Feature Selection:
+## Data Cleaning and Feature Selection:
 
 Dataset has so many missing value in almost all variable, except for a few. Many columns have nothing to do with the prices of the car, such as "id", "url", "image_url", se we removed those columns. We wanted to fixed missing values, because it is important to be handled as they could lead to wrong prediction or classification for any given model being used. We removed outliers and zero value of the price column. As locations do not have major correlation to the prices, we choose to remove 'long' and 'lat' as well. Since it is difficult to impute accurately we dropped columns that didn't have a year or odometer value because they are both heavily correlated to the other and are both missing. We also dropped model column in the end since the information was close to manufacture column, it had many missing values, and it was very difficult to find the value. We did not start droping columns in the beginning because we needed them to determine the missing value for the other columns with missing values so we imputed missing values and used np.select function.  
 
@@ -74,7 +73,7 @@ Since we had many missing value we used np.select function using the key words t
 
 For our feature engineering we used description column to find cars that is used for parts, project, or it is for purchase cars. 
 
-### Analysis
+## Analysis
 
 The prices don't differ very much in each states in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). 
 
@@ -89,7 +88,7 @@ there is a significant difference between price by states.
 
 
 
-### Conclusion
+## Conclusion
 
 New and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. Cars with 6, 8 or 10 cylinders tend to be more expensive, while 4 and 5-cylinder cars are cheaper. Diesel cars are more expensive than gas and hybrid cars. Cars equipped with all-wheel drive tend to be more expensive than those with front-wheel drive.
 

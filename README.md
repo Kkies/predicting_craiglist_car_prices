@@ -75,7 +75,12 @@ For our feature engineering we used description column to find cars that is used
 
 ## Analysis
 
-Based on our data, we came across many findings. Based on our data, the prices don’t differ very much in each state in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). Depending on the car condition, price was generally higher for cars that were new and like new conditions.
+Based on our data, we came across many findings. The prices don’t differ very much in each state in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). Depending on the car condition, price was generally higher for cars that were new and like new conditions.
+
+#### Based on our model we identified three key features:
+Odometer , Age, and year
+
+Our EDA and visualizations can be viewed in detail in our notebook, but here are some of our visualization that we did for our model:
 
 ### Car Type Price Median Resale 
 
@@ -112,7 +117,9 @@ Based on the figure we can say highest correlation is between age and price, and
 
 ![States_listed_count ](https://user-images.githubusercontent.com/62824675/93015037-c6457280-f56a-11ea-95a1-2ad125cef373.png)
 
-California, Florida, Texas, New York, and Oregon are top used car listing states. 
+California, Florida, Texas, New York, and Oregon are top used car listing states.
+
+
 
 ## Conclusion
 

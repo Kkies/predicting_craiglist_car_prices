@@ -103,7 +103,13 @@ The most popular color is w that most popular color white folowed by black and s
 
 ## Conclusion
 
+Based on our analysis we can conclude that most 
+
 New and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. Cars with 6, 8 or 10 cylinders tend to be more expensive, while 4 and 5-cylinder cars are cheaper. Diesel cars are more expensive than gas and hybrid cars. Cars equipped with all-wheel drive tend to be more expensive than those with front-wheel drive.
+
+As we have seen, the price depends on the age and the type of vehicle. Planning strategically when a car is bought and sold makes it possible to lose as little money as possible. In general, to buy a 2 years old car and to sell it when it is 4-5 years old seem to be a good choice.
+
+
 
 Possible Business Questions
 

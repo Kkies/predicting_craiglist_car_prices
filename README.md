@@ -75,7 +75,7 @@ For our feature engineering we used description column to find cars that is used
 
 ## Analysis
 
-Based on our data we came acroos many findings. Based on our data The prices don't differ very much in each states in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). California, Florida, Texas, New York, and Oregon are top used car listing states. 
+Based on our data we came acroos many findings. Based on our data The prices don't differ very much in each states in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). Depending on the car condition price were generally higer for cars that were new and like new cnditions.
 
 
 ### Car Type Price Median Resale 
@@ -105,11 +105,15 @@ As expected higher odometer tends to have lower prices, while lower odometer ten
 
 ### Correlation Between Age, Price, Odometer
 
+![Correlations](https://user-images.githubusercontent.com/62824675/93015033-bc237400-f56a-11ea-98d2-4d418c86bf6a.png)
+
+Based on the figure we can say highest correlation is between age and price, and the most negative is price and odometer
 
 ### Top Listing States
 
+![States_listed_count ](https://user-images.githubusercontent.com/62824675/93015037-c6457280-f56a-11ea-95a1-2ad125cef373.png)
 
-
+California, Florida, Texas, New York, and Oregon are top used car listing states. 
 
 ## Conclusion
 

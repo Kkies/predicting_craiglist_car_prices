@@ -35,7 +35,7 @@ Identify the most appropriate model.
 
 ## Dataset: "Used Cars Dataset"
 
-We used Kaggle dataset for this project. The data comes from Craigslist in the USA and provides information on car sales. It contains more 500.000 vehicles and has 25 columns.
+We used Kaggle dataset for this project. The data comes from Craigslist in the USA and provides information on car sales. It contains more 500,000 vehicles and has 25 columns.
 
 #### Data Columns:
 

@@ -85,6 +85,18 @@ Pickup cars and trucks have higher prices as they cost higher for new. The price
 
 The highest median resale price belongs to pickup trucks, followed by trucks. Coupes, vans, and SUVS have lower median resale prices than the trucks. Pickup trucks and trucks also have the largest spread of resale prices.
 
+
+
+![Manuf_Count](https://user-images.githubusercontent.com/62824675/93013496-e28ee280-f55d-11ea-906f-60abffff093c.png)
+The most popular car manufactore were Ford, Chevrolet, Toyota, Honda, and Nissan
+
+
+
+
+![Unknown](https://user-images.githubusercontent.com/62824675/93013502-f76b7600-f55d-11ea-985b-4d54274b594b.png)
+The most popular color is w that most popular color white folowed by black and silver
+
+
 there is a significant difference between vehicle color by states
 there is a significant difference between car manufacturer by states
 there is a significant difference between paint color by vehicle condition

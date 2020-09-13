@@ -81,6 +81,9 @@ Higher odometer tends to have lower prices, while lower odometer tends to be mor
 
 Pickup cars and trucks have higher prices as they cost higher for new. The prices for sedan, wagon, hatchback and mini-van are more stable.
 
+![Price_car_type](https://user-images.githubusercontent.com/62824675/93013192-f6851500-f55a-11ea-92e0-a673f413bc50.png)
+
+
 there is a significant difference between vehicle color by states
 there is a significant difference between car manufacturer by states
 there is a significant difference between paint color by vehicle condition

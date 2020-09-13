@@ -83,6 +83,7 @@ Pickup cars and trucks have higher prices as they cost higher for new. The price
 
 ![Price_car_type](https://user-images.githubusercontent.com/62824675/93013192-f6851500-f55a-11ea-92e0-a673f413bc50.png)
 
+The highest median resale price belongs to pickup trucks, followed by trucks. Coupes, vans, and SUVS have lower median resale prices than the trucks. Pickup trucks and trucks also have the largest spread of resale prices.
 
 there is a significant difference between vehicle color by states
 there is a significant difference between car manufacturer by states

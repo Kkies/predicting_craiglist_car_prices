@@ -75,48 +75,39 @@ For our feature engineering we used description column to find cars that is used
 
 ## Analysis
 
-The prices don't differ very much in each states in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). 
+Based on our data we came acroos many findings. Based on our data The prices don't differ very much in each states in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). California, Florida, Texas, New York, and Oregon are top used car listing states. 
 
-Higher odometer tends to have lower prices, while lower odometer tends to be more expensive. 
 
-Pickup cars and trucks have higher prices as they cost higher for new. The prices for sedan, wagon, hatchback and mini-van are more stable.
+### Car Type Price Median Resale 
 
 ![Price_car_type](https://user-images.githubusercontent.com/62824675/93013192-f6851500-f55a-11ea-92e0-a673f413bc50.png)
 
 The highest median resale price belongs to pickup trucks, followed by trucks. Coupes, vans, and SUVS have lower median resale prices than the trucks. Pickup trucks and trucks also have the largest spread of resale prices.
 
-
+### Car Popularity:
 
 ![Manuf_Count](https://user-images.githubusercontent.com/62824675/93013496-e28ee280-f55d-11ea-906f-60abffff093c.png)
 
 The most popular car manufactore were Ford, Chevrolet, Toyota, Honda, and Nissan
 
 
-
+### Color Popularity 
 
 ![Unknown](https://user-images.githubusercontent.com/62824675/93013502-f76b7600-f55d-11ea-985b-4d54274b594b.png)
 
 The most popular color is w that most popular color white folowed by black and silver
 
+### Price and Odometer Relation
 
+![Unknown](https://user-images.githubusercontent.com/62824675/93014259-7ebbe800-f564-11ea-9bdf-b35ca6b4765a.png)
+
+As expected higher odometer tends to have lower prices, while lower odometer tends to be more expensive.
+
+ 
 
 
 ## Conclusion
 
-Based on our analysis we can conclude that most 
-
-New and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. Cars with 6, 8 or 10 cylinders tend to be more expensive, while 4 and 5-cylinder cars are cheaper. Diesel cars are more expensive than gas and hybrid cars. Cars equipped with all-wheel drive tend to be more expensive than those with front-wheel drive.
-
-As we have seen, the price depends on the age and the type of vehicle. Planning strategically when a car is bought and sold makes it possible to lose as little money as possible. In general, to buy a 2 years old car and to sell it when it is 4-5 years old seem to be a good choice.
+Based on our analysis we can conclude that most new and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. The price depends on the age, odometer, and the type of vehicle. The highest correlation is between age and price. Planning strategically when a car is bought and sold makes it possible to lose as little money as possible. 
 
 
-
-Possible Business Questions
-
-Highest price based on type of car
-Highest price based on manufacturer of car in 2010
-Trend manufacturer base on type=sedan in 2010
-How many production of cars type in 2010?
-How many type of cars?
-How many county_fips for car with 6 cylinder engine?
-Manufacturer based on price

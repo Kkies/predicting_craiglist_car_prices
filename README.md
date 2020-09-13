@@ -67,16 +67,15 @@ We used Kaggle dataset for this project. The data comes from Craigslist in the U
 
 ## Data Cleaning and Feature Selection:
 
-Dataset has so many missing value in almost all variable, except for a few. Many columns have nothing to do with the prices of the car, such as "id", "url", "image_url", se we removed those columns. We wanted to fixed missing values, because it is important to be handled as they could lead to wrong prediction or classification for any given model being used. We removed outliers and zero value of the price column. As locations do not have major correlation to the prices, we choose to remove 'long' and 'lat' as well. Since it is difficult to impute accurately we dropped columns that didn't have a year or odometer value because they are both heavily correlated to the other and are both missing. We also dropped model column in the end since the information was close to manufacture column, it had many missing values, and it was very difficult to find the value. We did not start droping columns in the beginning because we needed them to determine the missing value for the other columns with missing values so we imputed missing values and used np.select function.  
+Dataset has so many missing values in almost all variable, except for a few. Many columns have nothing to do with the prices of the car, such as “id”, “url”, “image_url”, so we removed those columns. We wanted to fix missing values, because it is important to be handled as they could lead to wrong prediction or classification for any given model being used. We removed outliers and zero values of the price column. As locations do not have major correlation to the prices, we choose to remove ‘long’ and ‘lat’ as well. Since it is difficult to impute accurately, we dropped columns that didn’t have a year or odometer value because they are both heavily correlated to the other and are both missing. We also dropped model column in the end since the information was close to manufacture column, it had many missing values, and it was very difficult to find the value. We did not start dropping columns in the beginning because we needed them to determine the missing value for the other columns with missing values, so we imputed missing values and used np.select function.
 
-Since we had many missing value we used np.select function using the key words that we are looking for, then we imputed for the remaining missing values. For example for manufacturer column we used np.select from the describtion column since we could find our missing value answers in the descriptions. We also toke the same approach for the odometer column, but for odometer we choose values between 250 and 300,000 becasue they were many dirty values and missing information. We took the same approach for the year column and age to determine the avreage odometer for that car. For the paint column we imputed the color values from manufacturer coloumn to replaced are missing values. Again we used the same approch for vehicle cylinders, transmission, drive, fuel, size, type, and condition. For VIN column we changed it categorical value to 0 and 1 stating that if it has a VIN number or not.
+Since we had many missing values we used np.select function using the keywords that we are looking for, then we imputed for the remaining missing values. For example, for manufacturer column we used np.select from the description column since we could find our missing value answers in the descriptions. We also took the same approach for the odometer column, but for odometer we choose values between 250 and 300,000 because they were many dirty values and missing information. We took the same approach for the year column and age to determine the average odometer for that car. For the paint column we imputed the color values from manufacturer column to replace are missing values. Again we used the same approach for vehicle cylinders, transmission, drive, fuel, size, type, and condition. For VIN column we changed its categorical value to 0 and 1 stating that if it has a VIN number or not.
 
-For our feature engineering we used description column to find cars that is used for parts, project, or it is for purchase cars. 
+For our feature engineering we used description column to find cars that is used for parts, project, or it is for purchase cars.
 
 ## Analysis
 
-Based on our data we came acroos many findings. Based on our data The prices don't differ very much in each states in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). Depending on the car condition price were generally higer for cars that were new and like new cnditions.
-
+Based on our data, we came across many findings. Based on our data, the prices don’t differ very much in each state in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). Depending on the car condition, price was generally higher for cars that were new and like new conditions.
 
 ### Car Type Price Median Resale 
 
@@ -88,20 +87,20 @@ The highest median resale price belongs to pickup trucks, followed by trucks. Co
 
 ![Manuf_Count](https://user-images.githubusercontent.com/62824675/93013496-e28ee280-f55d-11ea-906f-60abffff093c.png)
 
-The most popular car manufactore were Ford, Chevrolet, Toyota, Honda, and Nissan
+The most popular car manufactures were Ford, Chevrolet, Toyota, Honda, and Nissan
 
 
 ### Color Popularity 
 
 ![Unknown](https://user-images.githubusercontent.com/62824675/93013502-f76b7600-f55d-11ea-985b-4d54274b594b.png)
 
-As we can see the most popular color is white folowed by black and silver color. 
+As we can see the most popular color is white followed by black and silver color. 
 
 ### Price and Odometer Relation
 
 ![Unknown](https://user-images.githubusercontent.com/62824675/93014259-7ebbe800-f564-11ea-9bdf-b35ca6b4765a.png)
 
-As expected higher odometer tends to have lower prices, while lower odometer tends to be more expensive.
+As expected, higher odometer tends to have lower prices, while lower odometer tends to be more expensive.
 
 ### Correlation Between Age, Price, Odometer
 
@@ -117,6 +116,6 @@ California, Florida, Texas, New York, and Oregon are top used car listing states
 
 ## Conclusion
 
-Based on our analysis we can conclude that most new and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. The price depends on the age, odometer, and the type of vehicle. The highest correlation is between age and price. Planning strategically when a car is bought and sold makes it possible to lose as little money as possible. 
+Based on our analysis, we can conclude that most new and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. The price depends on the age, odometer, and the type of vehicle. The highest correlation is between age and price. Planning strategically when a car is bought and sold makes it possible to lose as little money as possible.
 
 

@@ -95,7 +95,7 @@ The most popular car manufactore were Ford, Chevrolet, Toyota, Honda, and Nissan
 
 ![Unknown](https://user-images.githubusercontent.com/62824675/93013502-f76b7600-f55d-11ea-985b-4d54274b594b.png)
 
-The most popular color is w that most popular color white folowed by black and silver
+As we can see the most popular color is white folowed by black and silver color. 
 
 ### Price and Odometer Relation
 
@@ -103,7 +103,12 @@ The most popular color is w that most popular color white folowed by black and s
 
 As expected higher odometer tends to have lower prices, while lower odometer tends to be more expensive.
 
- 
+### Correlation Between Age, Price, Odometer
+
+
+### Top Listing States
+
+
 
 
 ## Conclusion

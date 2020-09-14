@@ -71,7 +71,9 @@ Dataset has so many missing values in almost all variable, except for a few. Man
 
 Since we had many missing values we used np.select function using the keywords that we are looking for, then we imputed for the remaining missing values. For example, for manufacturer column we used np.select from the description column since we could find our missing value answers in the descriptions. We also took the same approach for the odometer column, but for odometer we choose values between 250 and 300,000 because they were many dirty values and missing information. We took the same approach for the year column and age to determine the average odometer for that car. For the paint column we imputed the color values from manufacturer column to replace are missing values. Again we used the same approach for vehicle cylinders, transmission, drive, fuel, size, type, and condition. For VIN column we changed its categorical value to 0 and 1 stating that if it has a VIN number or not.
 
-For our feature engineering we used description column to find cars that is used for parts, project, or it is for purchase cars.
+For our feature engineering we used the description column to add more features. We made features such as cash sale or financed from terms found in the description column. This helped dial in our model and make up some ground because of not being able to use the model column since it was so dirty.
+
+We found the polynomial regression models performed the best since they created a lot of interaction features. This helped unearth new relationships that helped the model perform better. Our best model had 3250 features and an R^2 of 0.78.
 
 ## Analysis
 

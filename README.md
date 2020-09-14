@@ -77,7 +77,8 @@ We found the polynomial regression models performed the best since they created 
 
 ## Analysis
 
-Based on our data, we came across many findings. The prices don’t differ very much in each state in the US. But we do find that the used car prices are slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). Depending on the car condition, price was generally higher for cars that were new and like new conditions.
+Based on our data, we came across many findings. We found that there was a statistical difference of mean selling price between the various 50 states. 
+specifically, we found that used car prices were slightly higher in the states neighboured on Canada (such as Alaska, Idaho, Washington, Montana, North Dakota). Depending on the car condition, price was generally higher for cars that were new and like new conditions. In general, we found that there was statistical significance in including nearly all of the available catagorical features that were provided in the initial dataset. This resulted in our preprocessed data having over 144 columns, prior to any interaction generation.
 
 #### Based on our model we identified three key features:
 Odometer , Age, and year
@@ -125,6 +126,15 @@ California, Florida, Texas, New York, and Oregon are top used car listing states
 
 ## Conclusion
 
-Based on our analysis, we can conclude that most new and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. The price depends on the age, odometer, and the type of vehicle. The highest correlation is between age and price. Planning strategically when a car is bought and sold makes it possible to lose as little money as possible.
+Based on our analysis, we can conclude that most new and like-new cars tend to be more expensive, while cars with fair and salvage conditions tend to be much cheaper. The price depends on the age, odometer, and the type of vehicle. The highest correlation is between odometer and price (negative relationship). Planning strategically when a car is bought and sold makes it possible to lose as little money as possible.
+
+We found that using polynomial models of degree two on all available features, including OHEs, lead to the greatest results. We infer that this is due to the nature of categorical interactions. Adding context to the sale, such as color, manufacturer, condition, etc, provides our model with a greater understanding of the true underlying value of an online car listing.
+
+## Future Steps
+
+Some additional steps that we would like to explore are as follows:
+- Clean up the "model" feature that was provided in the original dataset. We believe that if we had accurate manufacturer - model information that our regression estimates would be significantly improved. Unfortunately, the data as provided from kaggle is highly unreliable and requires extensive cleaning and imputing.
+
+- Include popularity/review data on manufacturer by state, taken from either the cars.com or kellybluebook apis.
 
 https://drive.google.com/file/d/1dnrDq6ahVozGRNKaQnhxBooNfnvStIUC/view?usp=sharing
